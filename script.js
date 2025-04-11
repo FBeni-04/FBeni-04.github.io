@@ -127,6 +127,29 @@ const logos = [
 
   animate();
 
+function detectLanguage(code) {
+     const jsKeywords = ['function', 'console.log', 'let', 'var', 'const', 'for', 'while', 'if', 'else', 'alert', 'document', 'getElementById', 'innerText'];
+     let jsMatches = jsKeywords.some(keyword => code.includes(keyword));
+     if (jsMatches) {
+         return 'javascript';
+     }  
+     else {
+         return 'unknown';
+     }
+ }
+
+function detectAndRunCode() {
+     const code = document.getElementById('codeArea').value;
+     const language = detectLanguage(code);
+     if (language === 'javascript') {
+         runJavaScript(code);
+     }
+      else {
+         document.getElementById('output').innerText = 'Nem sikerült felismerni a nyelvet.';
+     }
+ }
+
+
 
 function runJavaScript(code) {
     try {
