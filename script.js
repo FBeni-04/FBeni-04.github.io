@@ -91,13 +91,24 @@ const logos = [
     playground.appendChild(ball);
     balls.push({ el: ball, x: Math.random() * 2 - 1, y: 0, vy: 0 });
   }
+  if(window.innerWidth < 970px) { 
+      for (let i = 0; i < 4; i++) {
+        var red = Math.floor(Math.random()*256);
+        var green = Math.floor(Math.random()*256);
+        var blue = Math.floor(Math.random()*256);
+        var color = 'rgb('+red+','+green+','+blue+')';
+        createBall(logos[i], color);
+      }
+  }
 
-  for (let i = 0; i < 4; i++) {
-    var red = Math.floor(Math.random()*256);
-    var green = Math.floor(Math.random()*256);
-    var blue = Math.floor(Math.random()*256);
-    var color = 'rgb('+red+','+green+','+blue+')';
-    createBall(logos[i], color);
+  else {  
+      for (let i = 0; i < logos.length; i++) {
+        var red = Math.floor(Math.random()*256);
+        var green = Math.floor(Math.random()*256);
+        var blue = Math.floor(Math.random()*256);
+        var color = 'rgb('+red+','+green+','+blue+')';
+        createBall(logos[i], color);
+      }
   }
 
   function animate() {
