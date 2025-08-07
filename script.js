@@ -128,7 +128,6 @@ const logos = [
       if (left <= 0 || left + 80 >= window.innerWidth) {
         ball.x *= -1;
       }
-
       ball.el.style.top = top + 'px';
       ball.el.style.left = left + 'px';
     });
@@ -136,6 +135,14 @@ const logos = [
     requestAnimationFrame(animate);
   }
 
+
+  window.addEventListener("scroll", () => {
+            if (window.scrollY < 51) {
+                balls.forEach(ball => {
+                ball.vy = -10;
+                });
+            }
+})
   animate();
 
 function detectLanguage(code) {
