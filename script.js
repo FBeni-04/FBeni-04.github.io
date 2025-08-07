@@ -128,7 +128,8 @@ const logos = [
       if (left <= 0 || left + 80 >= window.innerWidth) {
         ball.x *= -1;
       }
-      ball.el.style.transform = `translate(${ball.xPos}px, ${ball.y}px)`;;
+      ball.el.style.top = top + 'px';
+      ball.el.style.left = left + 'px';
     });
 
     requestAnimationFrame(animate);
