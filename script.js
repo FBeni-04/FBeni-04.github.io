@@ -172,9 +172,10 @@ function detectAndRunCode() {
 function runJavaScript(code) {
     try {
         const result = eval(code);
-        document.getElementById('output').innerText = "Siker";
+        document.getElementById('output').innerText = "Siker"+result;
         
     } catch (error) {
         document.getElementById('output').innerText = `Hiba (JavaScript): ${error.message}`;
     }
 }
+
