@@ -612,6 +612,17 @@ section .title::after{
     color: #333;
 }
 
+.contact .contact-content .right .references {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+
+}
+
+.contact .contact-content .right .references > div {
+    padding: 20px;
+    text-align: center;
+}
 
 .contact .contact-content .right .text {
     text-align: center;
@@ -782,6 +793,10 @@ footer span a:hover{
 
     textarea {
         width: 20em;
+    }
+
+    .contact .contact-content .right .references {
+        display: block;
     }
 }
 
