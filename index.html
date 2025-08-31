@@ -324,11 +324,18 @@
      </section>
 
     <footer>
-        <span>Created By Benjámin Ferenczi | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+        <span>Created By Benjámin Ferenczi | <span class="far fa-copyright"></span> <span id="thisYear"> All rights reserved.</span>
     </footer>
+
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("thisYear").innerHTML = year;
+    </script>    
 
     <script src="script.js"></script>
 </body>
 
 </html>
+
 
