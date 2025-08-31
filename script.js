@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Programozás", "Backend", "Web", "Adatbázis"],
+        strings: ["Programozás", "Backend", "Webfejlesztés", "Adatbázis", "Adattudomány"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -178,4 +178,5 @@ function runJavaScript(code) {
         document.getElementById('output').innerText = `Hiba (JavaScript): ${error.message}`;
     }
 }
+
 
