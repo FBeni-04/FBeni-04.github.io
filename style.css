@@ -708,6 +708,9 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
+    .hobbies iframe {
+        width: 100%;
+    }
     .menu-btn{
         display: block;
         z-index: 999;
@@ -844,5 +847,6 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
 
 
