@@ -77,7 +77,7 @@ const logos = [
   const playground = document.getElementById('skills');
   const balls = [];
 
-  function createBall(logo, color) {
+  function createBall(logo) {
     const ball = document.createElement('div');
     ball.className = 'ball';
     const img = document.createElement('img');
@@ -92,22 +92,14 @@ const logos = [
     balls.push({ el: ball, x: Math.random() * 2 - 1, y: 0, vy: 0 });
   }
   if(window.innerWidth < 970) { 
-      for (let i = 0; i < 4; i++) {
-        var red = Math.floor(Math.random()*256);
-        var green = Math.floor(Math.random()*256);
-        var blue = Math.floor(Math.random()*256);
-        var color = 'rgb('+red+','+green+','+blue+')';
-        createBall(logos[i], color);
+      for (let i = 0; i < 4; i++) {;
+        createBall(logos[i]);
       }
   }
 
   else {  
       for (let i = 0; i < logos.length; i++) {
-        var red = Math.floor(Math.random()*256);
-        var green = Math.floor(Math.random()*256);
-        var blue = Math.floor(Math.random()*256);
-        var color = 'rgb('+red+','+green+','+blue+')';
-        createBall(logos[i], color);
+        createBall(logos[i]);
       }
   }
 
