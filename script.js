@@ -82,7 +82,7 @@ const logos = [
     ball.className = 'ball';
     const img = document.createElement('img');
     img.src = logo;
-    img.style.width = "100%";
+    img.style.width = 100%;
     ball.appendChild(img);
 
     ball.style.left = Math.random() * (window.innerWidth - 60) + 'px';
