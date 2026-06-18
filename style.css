@@ -424,7 +424,7 @@ section .title::after{
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
   .ball img {
-    height: 80px;
+    height: 50px;
     object-fit: contain;
   }
 
