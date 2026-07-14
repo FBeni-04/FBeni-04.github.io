@@ -502,6 +502,14 @@ section .title::after{
     width: 85%;
 }
 
+.skills-content .right .python::before{
+    width: 85%;
+}
+
+.skills-content .right .java::before{
+    width: 75%;
+}
+
 /* hobbies section styling */
 .hobbies .title::after{
     content: "Egyéb hobbim";
